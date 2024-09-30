@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://d0r2tfnnug7wl"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_kxdl3"]
+
+[resource]
+script = ExtResource("1_kxdl3")
+question_info = "En la oscuridad me encuentro, pero no soy un ser vivo. Soy un tesoro para algunos y un miedo para otros. ¿Qué soy?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["Un secreto", "Un fantasma", "Una promesa", "Ninguna de las anteriores"])
+options2 = Array[String]([])
+correct = "Un secreto"

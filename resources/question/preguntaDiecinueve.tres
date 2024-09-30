@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://ifiph8jgb8v1"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_cnd1c"]
+
+[resource]
+script = ExtResource("1_cnd1c")
+question_info = "En la mitología del bosque, esta criatura es un guardián de la naturaleza que puede convertirse en humano y suele ser visto cerca de los ríos. ¿Qué criatura es?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["Fauno", "Centauro", "Selkie", "Nereida"])
+options2 = Array[String]([])
+correct = "Selkie"

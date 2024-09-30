@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://c3ywdqhix16yd"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_i42uk"]
+
+[resource]
+script = ExtResource("1_i42uk")
+question_info = "En el bosque me encuentras, aunque no soy de verdad, si me miras de cerca, en mil formas puedo estar. ¿Qué soy?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["Un espejismo", "Una sombra", "Un fantasma", "Una bruja"])
+options2 = Array[String]([])
+correct = "Un espejismo"

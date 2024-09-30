@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://bidh1h4j5hyth"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_pq5iu"]
+
+[resource]
+script = ExtResource("1_pq5iu")
+question_info = "¿Qué criatura del bosque encantado es conocida por guiar a los viajeros perdidos?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["Elfo", "Hada", "Troll", "Gnomo"])
+options2 = Array[String]([])
+correct = "Hada"

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://0vici1u8ikvw"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_ka0kh"]
+
+[resource]
+script = ExtResource("1_ka0kh")
+question_info = "En un claro del bosque, tres hongos crecen en círculo. El primer hongo dice: \"No soy el más venenoso\". El segundo hongo dice: \"El primer hongo está mintiendo\". El tercer hongo dice: \"El segundo hongo está diciendo la verdad\". ¿Cuál es el más venenoso?"
+questioninfo2 = ""
+type = 0
+options = Array[String]([" El primer hongo", "El segundo hongo", "El tercer hongo", "Ninguno"])
+options2 = Array[String]([])
+correct = "El segundo hongo"

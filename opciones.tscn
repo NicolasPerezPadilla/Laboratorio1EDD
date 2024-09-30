@@ -1,0 +1,103 @@
+[gd_scene load_steps=7 format=3 uid="uid://bx3j8idn1kink"]
+
+[ext_resource type="Script" path="res://scripts/opciones_menu.gd" id="1_fil35"]
+[ext_resource type="Texture2D" uid="uid://bdg73cxhos12q" path="res://imagenes/Captura de pantalla (984).png" id="2_xtyvm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u3njy"]
+bg_color = Color(0.213486, 0.241116, 0.26023, 1)
+border_color = Color(0.20015, 0.123103, 0.161713, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+shadow_size = 3
+
+[sub_resource type="Theme" id="Theme_nra3r"]
+Button/colors/font_color = Color(0.9239, 0.9239, 0.9239, 1)
+Button/font_sizes/font_size = 27
+Button/styles/normal = SubResource("StyleBoxFlat_u3njy")
+
+[sub_resource type="Theme" id="Theme_k42ii"]
+Label/font_sizes/font_size = 23
+
+[sub_resource type="Theme" id="Theme_kvpvr"]
+Label/font_sizes/font_size = 23
+
+[node name="Opciones" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fil35")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 575.0
+offset_bottom = 321.0
+texture = ExtResource("2_xtyvm")
+
+[node name="Volver" type="Button" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 83.0
+offset_top = 535.0
+offset_right = 292.0
+offset_bottom = 600.0
+theme = SubResource("Theme_nra3r")
+text = "Volver"
+
+[node name="General" type="HSlider" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.007
+anchor_bottom = 0.012
+offset_left = 84.0
+offset_top = 397.0
+offset_right = 399.943
+offset_bottom = 405.26
+
+[node name="Resolucion" type="OptionButton" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 281.0
+offset_right = 301.0
+offset_bottom = 324.0
+selected = 2
+item_count = 4
+popup/item_0/text = "1920x1080"
+popup/item_1/text = "1600x900"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+popup/item_3/text = "Pantalla Completa"
+popup/item_3/id = 3
+
+[node name="General2" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 80.0
+offset_top = 359.0
+offset_right = 170.0
+offset_bottom = 398.0
+theme = SubResource("Theme_k42ii")
+text = "General"
+
+[node name="Resolucion2" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 242.0
+offset_right = 200.0
+offset_bottom = 274.0
+theme = SubResource("Theme_kvpvr")
+text = "Resolución"
+
+[connection signal="pressed" from="NinePatchRect/Volver" to="." method="_on_volver_pressed"]
+[connection signal="value_changed" from="NinePatchRect/General" to="." method="_on_general_value_changed"]
+[connection signal="item_selected" from="NinePatchRect/Resolucion" to="." method="_on_resolucion_item_selected"]

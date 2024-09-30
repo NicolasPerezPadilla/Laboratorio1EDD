@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://c35q55y6ke3f6"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_t2d4u"]
+
+[resource]
+script = ExtResource("1_t2d4u")
+question_info = "Estás frente a tres cofres en un claro del bosque. Solo uno contiene el tesoro y las pistas son: \"El tesoro no está en el cofre 1\", \"El tesoro no está en el cofre 2\". ¿Dónde está el tesoro?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["Cofre 1", "Cofre 2", "Cofre 3", "Ninguno"])
+options2 = Array[String]([])
+correct = "Cofre 3"

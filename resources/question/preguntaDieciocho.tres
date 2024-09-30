@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://sxopj6w3xptr"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_8swqm"]
+
+[resource]
+script = ExtResource("1_8swqm")
+question_info = "Aparezco en el cielo y caigo en el suelo, dándole vida al bosque. ¿Qué soy?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["La lluvia", "El sol", "El viento", "La nieve"])
+options2 = Array[String]([])
+correct = "La lluvia"

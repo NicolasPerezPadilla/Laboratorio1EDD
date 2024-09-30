@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="QuizTheme" load_steps=23 format=3 uid="uid://b4g06lgyj6d4f"]
+
+[ext_resource type="Script" path="res://scripts/resources/theme.gd" id="1_apn2c"]
+[ext_resource type="Script" path="res://scripts/resources/Escenas.gd" id="1_mneey"]
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="2_m7m7p"]
+[ext_resource type="Resource" uid="uid://dgl5ehvde2pl5" path="res://resources/question/preguntaUno.tres" id="9_5l1ad"]
+[ext_resource type="Resource" uid="uid://c35q55y6ke3f6" path="res://resources/question/preguntaTres.tres" id="11_bji4v"]
+[ext_resource type="Resource" uid="uid://bqwgwm5e6wnl5" path="res://resources/question/preguntaCuatro.tres" id="12_q18m1"]
+[ext_resource type="Resource" uid="uid://c3ywdqhix16yd" path="res://resources/question/preguntaCinco.tres" id="13_4pbht"]
+[ext_resource type="Resource" uid="uid://bw6djiptxsjqy" path="res://resources/question/preguntaSeis.tres" id="14_quq1h"]
+[ext_resource type="Resource" uid="uid://cqgd0yknqk2lv" path="res://resources/question/preguntaSiete.tres" id="15_61rm0"]
+[ext_resource type="Resource" uid="uid://bsxtfbdcavoou" path="res://resources/question/preguntaOcho.tres" id="16_8ee8g"]
+[ext_resource type="Resource" uid="uid://cwcxryqple8fs" path="res://resources/question/preguntaNueve.tres" id="17_laotp"]
+[ext_resource type="Resource" uid="uid://d0r2tfnnug7wl" path="res://resources/question/preguntaDiez.tres" id="18_rxp51"]
+[ext_resource type="Resource" uid="uid://bidh1h4j5hyth" path="res://resources/question/preguntaOnce.tres" id="19_ryghf"]
+[ext_resource type="Resource" uid="uid://cb1kebf7oar1q" path="res://resources/question/preguntaDoce.tres" id="20_03bbn"]
+[ext_resource type="Resource" uid="uid://d03c8c7q6drdp" path="res://resources/question/preguntaTrece.tres" id="21_rniit"]
+[ext_resource type="Resource" uid="uid://d2suyq0o13v8w" path="res://resources/question/preguntaCatorce.tres" id="22_68x63"]
+[ext_resource type="Resource" uid="uid://g58cnitllyo4" path="res://resources/question/preguntaQuince.tres" id="23_e88or"]
+[ext_resource type="Resource" uid="uid://0vici1u8ikvw" path="res://resources/question/preguntaDieciseis.tres" id="24_up72h"]
+[ext_resource type="Resource" uid="uid://b0acqulxshuy" path="res://resources/question/preguntaDiecisiete.tres" id="25_mi0xt"]
+[ext_resource type="Resource" uid="uid://sxopj6w3xptr" path="res://resources/question/preguntaDieciocho.tres" id="26_ws4y4"]
+[ext_resource type="Resource" uid="uid://ifiph8jgb8v1" path="res://resources/question/preguntaDiecinueve.tres" id="27_1es6f"]
+[ext_resource type="Resource" uid="uid://cjh7t7aqarwi" path="res://resources/question/preguntaVeinte.tres" id="28_6557k"]
+
+[resource]
+script = ExtResource("1_apn2c")
+theme = Array[ExtResource("2_m7m7p")]([ExtResource("9_5l1ad"), ExtResource("11_bji4v"), ExtResource("12_q18m1"), ExtResource("13_4pbht"), ExtResource("14_quq1h"), ExtResource("15_61rm0"), ExtResource("16_8ee8g"), ExtResource("17_laotp"), ExtResource("18_rxp51"), ExtResource("19_ryghf"), ExtResource("20_03bbn"), ExtResource("21_rniit"), ExtResource("22_68x63"), ExtResource("23_e88or"), ExtResource("24_up72h"), ExtResource("25_mi0xt"), ExtResource("26_ws4y4"), ExtResource("27_1es6f"), ExtResource("28_6557k")])
+escenas = Array[ExtResource("1_mneey")]([])

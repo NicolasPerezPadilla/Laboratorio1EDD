@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://bqwgwm5e6wnl5"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_cgpa7"]
+
+[resource]
+script = ExtResource("1_cgpa7")
+question_info = "Cuatro criaturas mágicas están jugando a un juego. Cada una tiene una cantidad diferente de manzanas: el dragón tiene el doble de manzanas que la sirena, la sirena tiene 3 manzanas, y el hada tiene 5 manzanas más que el dragón. ¿Cuántas manzanas tiene el dragón?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["3", "10", "2", "6"])
+options2 = Array[String]([])
+correct = "6"

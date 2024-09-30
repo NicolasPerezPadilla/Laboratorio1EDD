@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://dgl5ehvde2pl5"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_mybjr"]
+
+[resource]
+script = ExtResource("1_mybjr")
+question_info = "En el bosque nací, aunque no soy animal ni planta. Si te pierdes, me buscarás. ¿Qué soy?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["El búho", "La brújula", "Un zorro", "Un río"])
+options2 = Array[String]([])
+correct = "La brújula"

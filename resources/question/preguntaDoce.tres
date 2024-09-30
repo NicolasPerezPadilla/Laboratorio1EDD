@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://cb1kebf7oar1q"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_1inqb"]
+
+[resource]
+script = ExtResource("1_1inqb")
+question_info = "¿Qué fenómeno natural se cree que es causado por la danza de las hadas en el bosque encantado?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["Lluvia de Estrellas", "Aurora Boreal", "Círculos de Hongos", "Eclipse Lunar"])
+options2 = Array[String]([])
+correct = "Círculos de Hongos"

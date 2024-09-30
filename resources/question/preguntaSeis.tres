@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://bw6djiptxsjqy"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_pmome"]
+
+[resource]
+script = ExtResource("1_pmome")
+question_info = "En un castillo, hay tres cajas: una contiene oro, otra plata y la tercera piedras preciosas. Cada caja tiene una etiqueta, pero están todas mal. Si abres una caja y descubres que contiene piedras preciosas, ¿qué caja puedes abrir a continuación para encontrar oro?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["La caja etiquetada como \"Oro\"", "La caja etiquetada como \"Plata\"", "La caja etiquetada como \"Piedras preciosas\"", "Ninguna"])
+options2 = Array[String]([])
+correct = "La caja etiquetada como \"Plata\""

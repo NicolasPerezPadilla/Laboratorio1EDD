@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://b0acqulxshuy"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_us17o"]
+
+[resource]
+script = ExtResource("1_us17o")
+question_info = "En el bosque hay 5 árboles. Cada árbol tiene un número diferente de hojas, pero juntos suman 100 hojas. Si el primer árbol tiene 10 hojas más que el segundo, el segundo tiene 5 hojas menos que el tercero, y el tercero tiene 15 hojas más que el cuarto, ¿cuántas hojas tiene el quinto árbol?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["20", "15", "30", "10"])
+options2 = Array[String]([])
+correct = "20"

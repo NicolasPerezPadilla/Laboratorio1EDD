@@ -1,0 +1,103 @@
+[gd_scene load_steps=10 format=3 uid="uid://buxidfnel031t"]
+
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_0cyag"]
+[ext_resource type="Texture2D" uid="uid://byakkr7xaeop3" path="res://imagenes/Portadajuego.png" id="2_gh3s4"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6p3eu"]
+bg_color = Color(0.733333, 0.568627, 0.419608, 1)
+border_color = Color(0.2, 0.121569, 0.160784, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Theme" id="Theme_x72a4"]
+Button/colors/font_color = Color(0.130772, 0.130772, 0.130772, 1)
+Button/font_sizes/font_size = 23
+Button/styles/normal = SubResource("StyleBoxFlat_6p3eu")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_g31gv"]
+bg_color = Color(0.733333, 0.568627, 0.419608, 1)
+border_color = Color(0.2, 0.121569, 0.160784, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Theme" id="Theme_c0r5u"]
+Button/colors/font_color = Color(0.140448, 0.140447, 0.140447, 1)
+Button/font_sizes/font_size = 22
+Button/styles/normal = SubResource("StyleBoxFlat_g31gv")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qr0h1"]
+bg_color = Color(0.733333, 0.568627, 0.419608, 1)
+border_color = Color(0.2, 0.121569, 0.160784, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="Theme" id="Theme_8lvax"]
+Button/colors/font_color = Color(0.150075, 0.150075, 0.150075, 1)
+Button/font_sizes/font_size = 23
+Button/styles/normal = SubResource("StyleBoxFlat_qr0h1")
+
+[sub_resource type="Theme" id="Theme_eeich"]
+Label/font_sizes/font_size = 33
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0cyag")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -576.0
+offset_top = -325.0
+offset_right = 576.0
+offset_bottom = 318.0
+texture = ExtResource("2_gh3s4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 450.0
+offset_top = 501.0
+offset_right = 709.0
+offset_bottom = 652.0
+
+[node name="Iniciar" type="Button" parent="NinePatchRect/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_x72a4")
+text = "Iniciar"
+
+[node name="Opciones" type="Button" parent="NinePatchRect/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_c0r5u")
+text = "Opciones"
+
+[node name="Salir" type="Button" parent="NinePatchRect/VBoxContainer"]
+layout_mode = 2
+theme = SubResource("Theme_8lvax")
+text = "Salir"
+
+[node name="Titulo" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 243.0
+offset_top = 56.0
+offset_right = 907.0
+offset_bottom = 136.0
+theme = SubResource("Theme_eeich")
+text = "Aventura en el Bosque Misterioso"
+
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/Iniciar" to="." method="_on_iniciar_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="NinePatchRect/VBoxContainer/Salir" to="." method="_on_salir_pressed"]

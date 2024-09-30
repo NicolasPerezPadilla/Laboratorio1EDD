@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://cjh7t7aqarwi"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_u2e7o"]
+
+[resource]
+script = ExtResource("1_u2e7o")
+question_info = "Se dice que esta criatura, que se asemeja a un hombre, tiene patas de cabra y es conocido por su amor a la música y el baile. ¿Quién es?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["Elfa", "Fauno", "Grifo", "Unicornio"])
+options2 = Array[String]([])
+correct = "Fauno"

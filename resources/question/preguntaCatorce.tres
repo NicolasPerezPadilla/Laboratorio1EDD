@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://d2suyq0o13v8w"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_usqvv"]
+
+[resource]
+script = ExtResource("1_usqvv")
+question_info = "Es el único lugar del mundo donde el hoy precede al ayer. ¿Dónde está?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["En un reloj", "En el diccionario", "En una ciudad llamada \"Hoy\"", "En un libro"])
+options2 = Array[String]([])
+correct = "En el diccionario"

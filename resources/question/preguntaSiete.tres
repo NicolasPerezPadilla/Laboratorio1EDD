@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="QuestionsQuiz" load_steps=2 format=3 uid="uid://cqgd0yknqk2lv"]
+
+[ext_resource type="Script" path="res://scripts/resources/question.gd" id="1_u5qwb"]
+
+[resource]
+script = ExtResource("1_u5qwb")
+question_info = "Nací del sol, pero el bosque me guarda. De día desaparezco, pero de noche soy tu única guía. ¿Qué soy?"
+questioninfo2 = ""
+type = 0
+options = Array[String](["El viento", "La niebla", "La luna", "El sol"])
+options2 = Array[String]([])
+correct = "La luna"

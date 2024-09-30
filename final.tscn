@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwka56oxdr7xi"]
+
+[ext_resource type="Script" path="res://finales.gd" id="1_20jhi"]
+[ext_resource type="Texture2D" uid="uid://butxx06t37k8y" path="res://imagenes/Captura de pantalla (980).png" id="2_h5ddd"]
+
+[sub_resource type="Theme" id="Theme_3owtg"]
+Label/colors/font_color = Color(0.106237, 0.106237, 0.106237, 1)
+Label/font_sizes/font_size = 32
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_20jhi")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 639.0
+texture = ExtResource("2_h5ddd")
+
+[node name="Volver" type="Button" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 555.0
+offset_right = 248.0
+offset_bottom = 611.0
+text = "Volver"
+
+[node name="Label" type="Label" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 31.0
+offset_right = 769.0
+offset_bottom = 87.0
+theme = SubResource("Theme_3owtg")
+text = "¡ Haz logrado llegar!"
+
+[connection signal="pressed" from="NinePatchRect/Volver" to="." method="_on_volver_pressed"]
